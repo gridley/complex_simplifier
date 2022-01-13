@@ -10,7 +10,7 @@ real part is zero, and whether the imaginary part is zero.
 You can then build expressions involving these variables using standard C++ syntax with parenthesis, plus, and times. To access
 either the real or imaginary part of the expression with zero values simplified out in string form, you can use the methods
 .real() or .imag() and print to cout. The intention here is to paste the resulting code into another C++ program where the
-real and imaginary parts of the variables respectively include postfixes _re or _im.
+real and imaginary parts of the variables respectively include suffixes _re or _im.
 
 I have found that the expressions thus obtained from removal of zero coefficients of complex numbers tend to beat gcc's optimizations
 even when using -O2 and -O3. However, it seems that -ffast-math is able to obtain this type of optimization, so this code is
